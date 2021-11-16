@@ -22,7 +22,7 @@ class LightBulb(Switchable):
 
 class ElectricalPowerSwitch:
 
-    def __init__(self, switchable: Switchable) -> None:
+    def __init__(self, switchable: Switchable):
         self.switchable = switchable
         self.on = False
 

@@ -8,8 +8,8 @@ class LightBulb:
 
 class ElectricalPowerSwitch:
 
-    def __init__(self, light_bulb: LightBulb) -> None:
-        self.light_bulb = light_bulb
+    def __init__(self):
+        self.light_bulb = LightBulb()
         self.on = False
 
     def press(self):
@@ -22,8 +22,7 @@ class ElectricalPowerSwitch:
 
 
 def main():
-    light_bulb = LightBulb()
-    switch = ElectricalPowerSwitch(light_bulb)
+    switch = ElectricalPowerSwitch()
     switch.press()
     switch.press()
 
